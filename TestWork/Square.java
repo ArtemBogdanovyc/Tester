@@ -4,10 +4,12 @@ import java.util.Arrays;
 
 public class Square extends Figure{
   private double area;
-    public Square(){
-        super();
-    }
+  public Square(){
+      super();
+  }
+
  public Square(int c, double a){
+
         super(c, a);
  }
 

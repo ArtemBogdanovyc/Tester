@@ -7,6 +7,7 @@ public class Triangle extends Figure{
    private double area;
 
     public  Triangle(int c ,double a){
+
         super(c, a);
     }
 

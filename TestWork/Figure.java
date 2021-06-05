@@ -18,13 +18,16 @@ public abstract class Figure {
 
 
     public String getColor(){
+
             return colorFigure;
     }
     public void draw() {
-        System.out.println(this);
+
+            System.out.println(this);
     }
 public String toString(){
-    return  "Figure:"+this.getClass().getSimpleName()+ "color:"+ color;
+
+            return  "Figure:"+this.getClass().getSimpleName()+ "color:"+ color;
         }
 
 
