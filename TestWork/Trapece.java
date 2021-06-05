@@ -14,8 +14,17 @@ public class Trapece extends Figure{
         this.sideTrapeceC=sideTrapeceC;
     }
 public double getHigh(){
-        high=Math.sqrt(sideTrapeceB*sideTrapeceB-((sideTrapeceC-side)/2)*((sideTrapeceC-side)/2));
-        return high;
+
+       try {
+           high = Math.sqrt(sideTrapeceB * sideTrapeceB - ((sideTrapeceC - side) / 2) * ((sideTrapeceC - side) / 2));
+           if((sideTrapeceC - side)==0){
+               throw  new ArithmeticException();
+           }
+       }catch (ArithmeticException ae){
+           System.out.println("ArithmeticException occured!");
+       }
+
+    return high;
 }
     public double getArea() {
         area=high*Math.sqrt(side*sideTrapeceB);

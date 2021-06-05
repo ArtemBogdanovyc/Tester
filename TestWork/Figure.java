@@ -27,7 +27,7 @@ public abstract class Figure {
     }
 public String toString(){
 
-            return  "Figure:"+this.getClass().getSimpleName()+ "color:"+ color;
+            return  "Figure:"+this.getClass().getSimpleName()+ "color:"+ getColor();
         }
 
 

@@ -10,10 +10,13 @@ public class CollectionOfFigurs {
     public CollectionOfFigurs(){
         grf= new GenerateRandomFigur();
         colect=new ArrayList<>();
-        quantity=10;
+        quantity=((int)(Math.random()*10));
     }
 
     public List<Figure> getColect() {
+        if(quantity==0){
+            System.out.println("Generate 0 figures");
+        }
         for(int i=0;i<quantity;i++){
             colect.add(grf.next());
         }
